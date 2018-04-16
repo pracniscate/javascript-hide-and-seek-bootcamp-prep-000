@@ -46,7 +46,7 @@ function increaseRankBy(n) {
   const children = document.querySelectorAll('ul.ranked-list li');
   
   for (let i = 0, l = children.length; i < l; i++) {
-    parseInt(children[i].innerHTML) + n;
+    children[i].innerHTML = (i + n).toString();
   }
   
   return children;
