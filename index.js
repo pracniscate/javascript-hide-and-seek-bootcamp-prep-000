@@ -22,19 +22,9 @@ function deepestChild() {
 // Define a function increaseRankBy(n) that increases the ranks in all of the .ranked-lists by n
 
 function increaseRankBy(n) {
-var rankedLists = document.querySelectorAll('.ranked-list li')
-  for (var i=0; i<rankedLists.length; i++) {
-+    rankedLists[i].innerHTML = parseInt(rankedLists[i].innerHTML)+n 
-+  }
-+  return rankedLists
-+}
-
-function increaseRankBy(n) {
-  const children = document.querySelectorAll('ul.ranked-list li');
-  
-  for (let i = 0, l = children.length; i < l; i++) {
-    children[i].innerHTML;
+  var rankedLists = document.querySelectorAll('.ranked-list li');
+  for (var i = 0; i < rankedLists.length; i++) {
+    rankedLists[i].innerHTML = parseInt(rankedLists[i].innerHTML) + n;
   }
-  
-  return children;
+  return rankedLists;
 }
